@@ -7,6 +7,8 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 .navbar {
     display: flex;
@@ -243,4 +245,107 @@ ul {
     cursor: pointer;
 }
 
+    /* media queries */
+@media (max-width:991px) {
+    html {
+        font: 55%;
+    }
+    header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
     
+}
+
+@media (max-width:480px) {
+    body {
+        width: 100%;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .col-3, .col-4 img {
+        width: 320px;
+        padding-bottom: 5px;
+    }
+    .col-2 img{
+        width: 320px;
+    }
+    .small_container {
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+    .col-2 p{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 14px;
+        justify-content: center;
+    }
+    .col-3 p{
+        flex-wrap: nowrap;
+    }
+    .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .footer p {
+        margin-bottom: 4px;
+        padding: auto;
+        font-size: 10px;
+        text-wrap: nowrap;
+    }
+    .footer .app-logo img {
+        width: 80px;
+        margin-left: 10px;
+        align-items: center;
+        align-items: center;
+    }
+    .footer-col-1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .app-logo{
+        margin-left: 10px;
+    }
+    .footer-col-2 img {
+        width: 100px ;
+        margin-bottom: 5px;
+        margin-left: -40px;
+    }
+    .footer-col-2 p{
+        font-size: 8px;
+        margin-bottom: 5px;
+        word-wrap: break-word;
+    }
+    .col_34{
+        display: flex;
+        margin-left: -40px;
+    }
+    ul li {
+        font-size: 10px;
+    }  
+    nav ul li {
+        /* display: inline-block; */
+        margin-right: 2px;
+    } 
+
+} 
